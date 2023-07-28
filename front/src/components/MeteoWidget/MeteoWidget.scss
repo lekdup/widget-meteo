@@ -1,0 +1,63 @@
+.component {
+    width: 20rem;
+    background-color: lighten(#282c34, 50);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+img {
+    max-width: 100%;
+}
+
+form{
+    display: flex;
+    & input {
+        border: none;
+        width: 100%;
+        border-bottom: lighten(#282c34, 60) 1px solid;
+        color: #282c34;
+        font-size: 1.4rem;
+        outline: none;
+        background-color: lighten(#282c34, 50);
+    }
+    & button {
+        // margin-left: -1rem;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        color: #282c34;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.weather {
+    color: #282c34;
+    &-place-name {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+    &-result {
+        // display: flex;
+        // justify-content: space-around;
+        font-size: 1.4rem;
+        &-degree {
+            font-size: 2rem;
+            padding-top: 1rem;
+        }
+    }
+
+}
+p {
+    // font-size: 2rem;
+    font-weight: 600;
+}
+
+.spinner {
+    margin: 4rem auto;
+}
